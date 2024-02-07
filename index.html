@@ -6,6 +6,7 @@
 	<title>Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://kit.fontawesome.com/07aae01dff.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	</head>
 <body>
 	<div class="main_container">
@@ -55,12 +56,12 @@
 		</main>
 	</div>
 
-	<div class="about" id="about">
+	<div class="about" id="about" data-aos="flip-left">
 			<h1>Who I'm</h1>
 			<div class="all_about_container">
 			<div class="ui about_items">
 				<div>
-					<img src="ui.jfif" alt="uinotfound">
+					<img src="ui.jfif" id="img1" alt="uinotfound">
 				</div>
 				<div>
 					<p>I'm a UI Designer.
@@ -95,7 +96,7 @@
 
 		<div class="main_service" id="service">
 			<h1>Our Services</h1>
-		<div class="services">
+		<div class="services" data-aos="zoom-in">
 			<div class="service_item">
 				<i class="fa-brands fa-servicestack"></i>
 				<h1>Web Development</h1>
@@ -142,12 +143,20 @@
 		<div class="footer">
 			<ul>
 				<li>&copy copyright</li>
-				<li>email: suyogadk25@gmail.con</li>
+				<li>email: suyogadk25@gmail.com</li>
 				<li>follow me on instagram<a href="https://www.instagram.com/pappuadk100/" class="fa fa-instagram"></a></li>
 				<li>follow me on facebook<a href="https://www.facebook.com/Pappuadk100?mibextid=ZbWKwL" class="fa fa-facebook"></a></li>
 			</ul>
 		</div>
 		</div>
+
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				offset:300,
+				duration: 1000,
+			});
+		</script>
 
 </body>
 <script src="index.js"></script>
